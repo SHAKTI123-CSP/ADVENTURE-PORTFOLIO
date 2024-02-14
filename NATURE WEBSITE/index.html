@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Stoke&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .main {
+        height: 500px;
+        object-fit: cover;
+        border-bottom-left-radius: 70%;
+        border-bottom-right-radius: 350px;
+
+        background-image: url("main.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      /*  heading and camp type*/
+      .first h2 {
+        font-family: "Dancing Script", cursive;
+        font-family: "Stoke", serif;
+      }
+      .container2 {
+        justify-content: space-around;
+      }
+      .one img {
+        border-radius: 50%;
+      }
+      .bb {
+        position: relative;
+       
+      }
+      .bb::after {
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: rgb(23, 29, 23);
+        position: absolute;
+        right: 0;
+        bottom: 05px;
+        transform: scaleX(0);
+        transition: 0.4s;
+        transition-timing-function: ease-in-out;
+      }
+      .bb:hover::after {
+        transform: scaleX(1);
+      }
+      /* why chose us*/
+      .mout img {
+        height: 400px;
+        width: 400px;
+      }
+      #mont {
+        position: relative;
+        left: 90px;
+      }
+      /* .chose1 {
+          width: 500px;
+          height: 300px;
+          
+          gap: 1px;
+          background-position: center;
+          background-size: contain;
+          background-attachment: fixed;
+        }
+        .chose1 img{
+          height: 300px;
+          width: 500px;
+        }
+        .text{
+          width: 400px;
+          
+          height: 300px;
+          position: relative;
+          left: 45px;
+          top: 15px;
+          overflow: hidden;
+          text-wrap: wrap ;
+        }
+     
+        .win{
+          position: relative;
+          top: 30px;
+        }
+        .mont2{
+          position: absolute;
+          right: 10px;
+        }*/
+      /*          */
+      .lastt {
+        background-color: antiquewhite;
+        width: 100%;
+      }
+      .last img {
+        height: 300px;
+        width: 400px;
+      }
+      .project {
+        position: relative;
+        left: 10px;
+      }
+      .end {
+        align-items: center;
+      }
+
+      /* image*/
+      .lastt {
+        position: relative;
+        top: 50px;
+      }
+      .last1 img {
+        width: 200px;
+        height: 200px;
+      }
+
+      /* ending*/
+      .imgsec img {
+        width: 190px;
+        height: 210px;
+      }
+
+      /* MEDIA QUERY*/
+
+      @media (max-width: 576px) {
+        .main {
+          height: 500px;
+          object-fit: cover;
+          border-bottom-left-radius: 10%;
+          border-bottom-right-radius: 500px;
+  
+          background-image: url("main.jpg");
+          background-size: cover;
+          background-attachment: fixed;
+        }
+        .box p{
+          position: relative !important;
+          left: 0px !important;
+          font-size: 8.5px;
+          
+        }
+        /*.main {
+          height: 300px;
+          border-bottom-left-radius: 40%;
+        }*/
+        .box h1 {
+          font-size: 18px;
+        }
+        .first h2 {
+          font-size: 15px;
+          padding-top: 15px;
+        }
+        .one img {
+          height: 70px;
+          width: 70px;
+          border-radius: 50%;
+        }
+        .one p {
+          font-size: 12px;
+        }
+
+        /*why chose us*/
+        .seclimg img {
+          height: 200px;
+          width: 200px;
+        }
+        .secltext {
+          margin: 0;
+          overflow: hidden;
+          height: 198px;
+        }
+        /*why chose us*/
+        .mm {
+          gap: 30px;
+        }
+        .mout {
+          height: 100px !important;
+          width: 100px !important;
+        }
+        .mountt {
+          font-size: 5px;
+        }
+        .text {
+          height: 100px;
+          overflow: hidden;
+        }
+        #mont {
+          position: relative;
+          left: 0px;
+        }
+        /* .chose1 {
+              width: 100px;
+              height: 190px;
+              position: relative;
+              
+            }
+            .chose1 img{
+              width: 150px;
+              height: 100px;
+            }
+            .text{
+              width: 200px;
+             
+              height: 100px;
+              position: relative;
+              left: 70px;
+              top: 15px;
+             
+              
+            }
+            .text h3{
+              font-size: 10px;
+              font-weight: 300;
+            }
+            .text p{
+              font-size: 8px;
+            }*/
+
+        /*==================*/
+        .last img {
+          width: 150px;
+          height: 100px;
+        }
+        #project {
+          width: 100%;
+          height: 200px;
+        }
+        .project h3 {
+          font-size: 13px;
+        }
+        .endt p {
+          font-size: 10px;
+        }
+
+        .last {
+          gap: 20px;
+          padding-right: 30px;
+        }
+        .last img {
+          width: 100px;
+          height: 50px;
+          position: relative;
+          right: 25px;
+        }
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-fluid main col-lg-12 col-xl-12 col-sm-12">
+      <nav class="navbar navbar-expand-lg bg-body-transprent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- <img src="3 or mid.jpg" alt=""> -->
+      <div class="box align-item-center text-light col-lg-8 col-xl-8 col-sm-8">
+        <h1 class="text-center py-5">Explore, Discover, Adventure</h1>
+        <p class="py-3 firsttext" style="position: relative; bottom: 50px; left:190px">
+          Embark on a thrilling voyage with
+          <span class="text-success text-uppercase"
+            >Adventure with jakc-jack</span
+          >
+          and unlock a world of excitement, wonder, and adrenaline-pumping
+          experiences
+        </p>
+      </div>
+      <div class="d-flex justify-content-end py-5">
+      <button type="button" class="btn btn-success d-flex justify-content-end bb">
+        Search for Adeventure
+      </button></div>
+    </div>
+
+    <!-- heading and camp type -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 first">
+          <h2 class="text-uppercase">discover a new world...</h2>
+          <div class="container2 d-flex p-5 ">
+            <div class="one text-center">
+              <img
+                src="2.jpg"
+                alt=""
+                height="100px"
+                width="100px"
+                id="kk"
+                class="kk"
+              />
+              <p class="text-uppercase">mountain camping</p>
+            </div>
+
+            <div class="one text-center">
+              <img
+                src="https://assets.fortnitecreativehq.com/wp-content/uploads/2023/11/22194916/landscape_comp-3966-1536x864.jpeg"
+                alt=""
+                height="100px"
+                width="100px"
+                id="kk"
+              />
+              <p class="text-uppercase">dirtbike racing</p>
+            </div>
+
+            <div class="one text-center">
+              <img
+                src="https://media.istockphoto.com/id/1212944319/vector/flat-design-of-happy-surfer-boy.jpg?s=1024x1024&w=is&k=20&c=guLGAvdNRSaWeZhJUJ3-6mgp7Te8RlNMPPydXSaBJhg="
+                alt=""
+                height="100px"
+                width="100px"
+                id="kk"
+              />
+              <p class="text-uppercase">surfing adventure</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHY CHOSE US -->
+    <div class="container">
+      <div class="rows">
+        <div class="col-12 d-flex mm p-4">
+          <div class="col-lg-6 col-xl-6 col-sm-6 col-md-6 chose1">
+            <img src="dat5_z598_220613.jpg" alt="" class="mout" width="400px" />
+          </div>
+          <div class="col-lg-6 col-xl-6 col-sm-6 col-md-6 sm-gap-10 text">
+            <h3 class="mount">Mountain camping</h3>
+            <p class="mountt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              iste quos unde, debitis dolore provident atque soluta dolorem hic,
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+              ipsum dolor sit amet, consectetur adipisicing elit. Nihil,
+              blanditiis! Lorem, ipsum dolor sit amet consectetur adipisicing
+              elit. Dolores commodi voluptatem amet hic corporis laboriosam
+              corrupti facere culpa excepturi voluptatibus!
+            </p>
+            <br />
+            <br />
+            <!-- <button type="button" class="btn btn-success text-uppercase btn-sm bb">more info</button> -->
+            <div class="col-lg-4 col-sm-3 col-xl-4">
+              <button type="button" class="btn btn-success btn-sm">
+                Success
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 d-flex p-4 mm">
+          <div class="col-lg-6 col-xl-6 col-sm-6 col-md-6 sm-gap-10 text">
+            <h3 class="mount">Mountain camping</h3>
+            <p class="mountt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              iste quos unde, debitis dolore provident atque soluta dolorem hic,
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+              ipsum dolor sit amet, consectetur adipisicing elit. Nihil,
+              blanditiis! Lorem, ipsum dolor sit amet consectetur adipisicing
+              elit. Dolores commodi voluptatem amet hic corporis laboriosam
+              corrupti facere culpa excepturi voluptatibus!
+            </p>
+            <br />
+            <br />
+            <!-- <button type="button" class="btn btn-success text-uppercase btn-sm bb">more info</button> -->
+            <div class="col-lg-4 col-sm-3 col-xl-4">
+              <button type="button" class="btn btn-success btn-sm">
+                Success
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xl-6 col-sm-6 col-md-6 chose1">
+            <img
+              src="dat5_z598_220613.jpg"
+              alt=""
+              class="mout"
+              id="mont"
+              width="400px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container px-2">
+          <div class="row">
+           <div class="col-12 d-flex">
+              <div class="col-lg-6 col-xl-6 col-sm-6 col-md-6 chose1">
+                <img src="dat5_z598_220613.jpg" alt="" class="mout">
+              </div>
+              <div class="col-lg-6 col-xl-6 col-sm-6 col-md-6  text">
+                <h3 class="mount">Mountain camping </h3>
+                <p class="mountt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque iste quos unde, debitis dolore provident atque soluta dolorem hic, Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, blanditiis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi voluptatem amet hic corporis laboriosam corrupti facere culpa excepturi voluptatibus!</p>
+                <br> <br>
+                <button type="button" class="btn btn-success text-uppercase bb col-4">more info</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row lg-p-3 xl-p-3 win">
+            <div class="col-12 d-flex">
+              
+               <div class="col-lg-6 col-xl-6 col-sm-6 col-md-6  text">
+                 <h3 class="mount2">Mountain camping </h3>
+                 <p class="mountt2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque iste quos unde, debitis dolore provident atque soluta dolorem hic, Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, blanditiis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi voluptatem amet hic corporis laboriosam corrupti facere culpa excepturi voluptatibus!</p>
+                 <br> <br>
+                 <button type="button" class="btn btn-success text-uppercase bb col-4">more info</button>
+               </div>
+
+               <div class="col-lg-6 col-xl-6 col-sm-6 col-md-6 chose1">
+                <img src="dat5_z598_220613.jpg" alt="" class="mont2" >
+              </div>
+             </div>
+           </div>
+        </div> -->
+
+    <!-- PROJECT AND WINNER -->
+    <div class="container-fluid lastt py-5">
+      <div class="d-lg-flex">
+        <div class="col-sm-12 d-sm-inline d-lg-flex">
+          <div class="last col-lg-6 col-md-6 col-sm-6 px-4">
+            <img src="mid.jpg" alt="" class="seclimg" id="project"/>
+          </div>
+          <div class="project col-lg-6 col-md-6 col-sm-6">
+            <h3 class="seclhead">
+              Our more than 50+ contry for adventure trips. Lorem ipsum dolor
+              sit amet.
+            </h3>
+            <p class="mx-lg-5 mx-sm-0 p-lg-2 secltext">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
+              fugit illum beatae commodi tempore laborum possimus quod minima
+              itaque adipisci illo, praesentium in, excepturi accusantium saepe
+              pariatur dolores expedita nihil minus laboriosam delectus
+              consectetur iure ea. Laborum eum hic reiciendis. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Doloribus, aperiam sapiente
+              praesentium veniam reprehenderit quod minus ducimus alias illo
+              accusamus ipsa dolores recusandae quam culpa? Eveniet, error odio
+              repudiandae omnis qui nihil neque aspernatur fugit. Eum quos, iste
+              id distinctio voluptas consequuntur, nesciunt aperiam eveniet
+              rerum laboriosam, quia hic unde.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- image -->
+
+    <div class="end col-12 text-center justify-content-center p-5">
+      <h1>Adventure life</h1>
+      <div class="d-flex col-12 endt">
+        <p class="">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, at?
+          Qui at perspiciatis eius quos cumque quo incidunt pariatur odio
+          consectetur quod. Obcaecati vel numquam explicabo rem, sequi
+          aspernatur ex delectus deleniti incidunt quam quas.
+        </p>
+      </div>
+      <div class="container d-flex text-center imgsec last">
+        <div class="col-lg-4 col-sm-4">
+          <img src="mid.jpg" alt="" />
+        </div>
+
+        <div class="col-lg-4 col-sm-4">
+          <img src="mid.jpg" alt="" />
+        </div>
+
+        <div class="col-lg-4 col-sm-4">
+          <img src="mid.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer>
+      <footer class="bg-body-tertiary text-center">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #3b5998"
+              href="#!"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+
+            <!-- Twitter -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #55acee"
+              href="#!"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+
+            <!-- Google -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #dd4b39"
+              href="#!"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+
+            <!-- Instagram -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #ac2bac"
+              href="#!"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+
+            <!-- Linkedin -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #0082ca"
+              href="#!"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <!-- Github -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #333333"
+              href="#!"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.05)"
+        >
+          © 2020 Copyright:
+          <a class="text-body" href="https://mdbootstrap.com/"
+            >MDBootstrap.com</a
+          >
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </footer>
+
+    <!-- <div class="last1"><img src="https://img.freepik.com/free-vector/man-with-backpack-stands-cliff-top-looking-mountain-trail-climbing-trekking-hiking-walking-adventures-nature_575670-1141.jpg" alt=""></div> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll("#kk"), {
+        max: 25,
+        speed: 800,
+        scale: 1,
+        gyroscopeMinAngleX: -45,
+      });
+
+      <!-- scroll script -->
+      ScrollReveal({
+        reset: true,
+        distance: "60px",
+        duration: 2500,
+        delay: 400,
+      });
+      ScrollReveal().reveal(".book", {
+        delay: 500,
+        origin: "left",
+        intervel: "200",
+      });
+      ScrollReveal().reveal(".one", {
+        delay: 500,
+        origin: "bottom",
+        intervel: "200",
+      });
+      ScrollReveal().reveal(".mount", { origin: "bottom", intervel: "400" });
+      ScrollReveal().reveal(".mountt", {
+        delay: 100,
+        origin: "bottom",
+        intervel: "200",
+      });
+      ScrollReveal().reveal(".bb", {
+        delay: 500,
+        origin: "bottom",
+        intervel: "200",
+      });
+      ScrollReveal().reveal(".mout", {
+        delay: 100,
+        origin: "bottom",
+        intervel: "00",
+      });
+      ScrollReveal().reveal(".mont2", {
+        delay: 100,
+        origin: "bottom",
+        intervel: "00",
+      });
+      ScrollReveal().reveal(".mountt2", {
+        delay: 500,
+        origin: "bottom",
+        intervel: "00",
+      });
+      ScrollReveal().reveal(".seclimg", {
+        delay: 500,
+        origin: "bottom",
+        intervel: "00",
+      });
+      ScrollReveal().reveal(".seclhead", {
+        delay: 100,
+        origin: "bottom",
+        intervel: "00",
+      });
+      ScrollReveal().reveal(".secltext", {
+        delay: 500,
+        origin: "bottom",
+        intervel: "00",
+      });
+    </script>
+  </body>
+</html>
